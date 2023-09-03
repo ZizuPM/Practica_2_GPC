@@ -6,8 +6,8 @@
 El alumno centralizará el código fuente de un proyecto web en la nube con Git (GitLab), adicionalmente visualizará la diferencia entre tráfico HTTP y HTTPS.
 
 ## Desarrollo
-1.  Crea un *fork* del repositorio <https://gitlab.com/nehnemini/redes-2021-1>, en tu propia cuenta de Gitlab.
-2.  Ingresa desde una terminal al servidor que instalaste en la Práctica 2, en AWS.
+1.  Crea un *fork* del repositorio <https://github.com/ZizuPM/Practica_2_GPC>, en tu propia cuenta de Github.
+2.  Ingresa desde una terminal al servidor que instalaste en la Práctica 2, en GCP.
 3.  Cambia al directorio `/var/www/html`.
 4.  Clona tu repositorio creado en el paso 1, con el comando `sudo git clone <https://mi_repositorio>`.
 5.  Cambia al directorio `/etc/apache2/sites-available/`.
@@ -47,12 +47,15 @@ ScriptAlias /cgi-bin/ /var/www/html/redes-2021-1/lab3/codigo_ejemplo/cgi-bin/
 19.  Ingresa al formulario desde un navegador web, y verifica que se esté ejecutando correctamente el script de Python.
 20.  Modifica la página web del formulario agregando una hoja de estilo, y al menos una imagen, colocando los archivos correspondiente en las carpetas destinadas para ello.
 21.  Actualiza tu repositorio git cuando hayas aplicado los cambios.
-22.  En tu equipo ejecuta Wireshark en la interfaz de red conectada a internet, y coloca un filtro para capturar sólo los mensajes que involucren la dirección IP de tu servidor o instancia en AWS, y en el puerto TCP/80.
+22.  En tu equipo ejecuta Wireshark en la interfaz de red conectada a internet, y coloca un filtro para capturar sólo los mensajes que involucren la dirección IP de tu servidor o instancia en GCP, y en el puerto TCP/80.
 23.  En un navegador web, consulta tu sitio, e ingresa un usuario y contraseña en el formulario, y da clic en el botón.
 24.  En Wireshark, identifica y observa el mensaje en dónde se muestran en claro los datos que colocaste en el formulario, incluye la captura de pantalla de esto en tu reporte.
 25.  Cambia tu formulario para que los datos se envíen por el método POST de HTTP, en lugar del método GET, recuerda reiniciar el servicio de Apache para evitar que la caché muestre el formulario anterior. Repite los pasos del 22 al 25.
 
 ## Guia para su desarrollo
+Se ha desarrollado una guia para familiarizarse con el entorno de Google Cloud y pueden llevar a acabo la practica:
+
+NOTA: La guia solo sirve como material de apoyo, mas no contiene en su totalidad los pasos para llevar acabo la practica.
 
 ## Evaluación
 1.  Menciona con tus propias palabras las ventajas que tiene centralizar el código fuente con git sin trabajar directamente en el servidor.
