@@ -53,3 +53,18 @@ ScriptAlias /cgi-bin/ /var/www/html/redes-2021-1/lab3/codigo_ejemplo/cgi-bin/
 25.  Cambia tu formulario para que los datos se envíen por el método POST de HTTP, en lugar del método GET, recuerda reiniciar el servicio de Apache para evitar que la caché muestre el formulario anterior. Repite los pasos del 22 al 25.
 
 ## Guia para su desarrollo
+
+## Evaluación
+1.  Menciona con tus propias palabras las ventajas que tiene centralizar el código fuente con git sin trabajar directamente en el servidor.
+2.  ¿Para qué se usa la directiva `Options -Indexes`?
+3.  Menciona algún concepto que no te haya quedado del todo claro (opcional).
+4.  Liga del repositorio GitLab del repositorio con tus cambios.
+5.  Captura de pantalla del tráfico http (no seguro) con wireshark, marcando en dónde se envía la información en claro, tanto para el método GET como para el método POST.
+6.  ¿Cuál es la diferencia que se aprecia en Wiresharl entre los mensajes que en donde se usó el método GET y los mensajes en donde se usa el método POST?, ¿cuál es la diferencia que se nota en el navegador web cuando se usa cada uno de estos métodos?
+
+## Notas adicionales
+1.  El reporte se entrega de manera individual.
+2.  Registrar en el reporte los pasos que sean considerados necesarios para explicar cómo se realizó la práctica, e incluir capturas de pantalla que justifiquen los resultados obtenidos.
+3.  Incluir las respuestas del Cuestionario en el reporte.
+4.  Se pueden agregar posibles errores, complicaciones, opiniones, críticas de la práctica o del laboratorio, o cualquier comentario relativo a la práctica.
+5.  Subir los archivos relacionados con la práctica a Moodle en formato PDF.
