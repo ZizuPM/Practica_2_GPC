@@ -13,7 +13,7 @@ El alumno centralizará el código fuente de un proyecto web en la nube con Git 
 5.  Cambia al directorio `/etc/apache2/sites-available/`.
 6.  Copia el archivo `000-default.conf` al archivo `redesfc.conf`, utiliza la opción `-a` en el comando `cp`, para que se preserven los atributos del archivo, tales como el dueño, el grupo y los permisos.
 7.  Con un editor de texto, abre el archivo `redesfc.conf` copiado en el paso anterior.
-8.  Cambia el valor de la directiva `DocumentRoot`, en lugar de que esté establecido con la ruta `/var/www/html`, coloca la ruta en donde se encuentra el código HTML y otros elementos web de la carpeta `codigo_ejemplo/` de la práctica 3 del repositorio clonado en el punto 4. Por ejemplo, `/var/www/html/redes-2021-1/lab3/codigo_ejemplo`.
+8.  Cambia el valor de la directiva `DocumentRoot`, en lugar de que esté establecido con la ruta `/var/www/html`, coloca la ruta en donde se encuentra el código HTML y otros elementos web de la carpeta `codigo_ejemplo/` de la práctica 3 del repositorio clonado en el punto 4. Por ejemplo, `/var/www/html/Practica_2_GCP/codigo_ejemplo`.
 9.  Guarda los cambios en el archivo `redesfc.conf`
 10. Cambia al directorio `/var/www/html`.
 11. Cambia tanto el usuario como el grupo del directorio y de sus elementos, por tu usuario y grupo, por ejemplo `chown -R ubuntu:ubuntu redes-2021-1/`
@@ -22,7 +22,7 @@ El alumno centralizará el código fuente de un proyecto web en la nube con Git 
 14. En el mismo archivo `redesfc.conf`, agrega entre las directivas `<VirtualHost></VirtualHost>` lo siguiente. Verifica que la ruta del directorio para tu caso sea el correcto. Esto se usa para evitar que el servidor liste el contenido de los directorios de la ruta configurada en `DocumentRoot`, es una configuración de seguridad.
 
 ```
-<Directory /var/www/html/redes-2021-1/lab3/codigo_ejemplo>
+<Directory /var/www/html/Practica_2_GCP/codigo_ejemplo>
   Options -Indexes
 </Directory>
 ```
@@ -33,7 +33,7 @@ El alumno centralizará el código fuente de un proyecto web en la nube con Git 
 18.  En el mismo archivo `redesfc.conf`, agrega justo debajo de las líneas que se colocaron en el paso 14, las siguientes líneas para configurar la ejecución de scripts de Python en el directorio en donde está el repositorio de git. Verifica que la ruta del directorio para tu caso sea el correcto.
 
 ```
-ScriptAlias /cgi-bin/ /var/www/html/redes-2021-1/lab3/codigo_ejemplo/cgi-bin/
+ScriptAlias /cgi-bin/ /var/www/html/Practica_2_GCP/codigo_ejemplo/cgi-bin/
 
 <IfModule cgid_module>
     <Directory /var/www/html/redes-2021-1/lab3/codigo_ejemplo/cgi-bin/>
