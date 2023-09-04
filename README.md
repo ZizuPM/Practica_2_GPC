@@ -36,11 +36,11 @@ El alumno centralizará el código fuente de un proyecto web en la nube con Git 
 ScriptAlias /cgi-bin/ /var/www/html/Practica_2_GCP/codigo_ejemplo/cgi-bin/
 
 <IfModule cgid_module>
-    <Directory /var/www/html/redes-2021-1/lab3/codigo_ejemplo/cgi-bin/>
-        Options -Indexes
-        Options +ExecCGI
-        AddHandler cgi-script .py
-    </Directory>
+  <Directory /var/www/html/redes-2021-1/lab3/codigo_ejemplo/cgi-bin/>
+    Options -Indexes
+    Options +ExecCGI
+    AddHandler cgi-script .py
+  </Directory>
 </IfModule>
 ```
 
@@ -53,7 +53,7 @@ ScriptAlias /cgi-bin/ /var/www/html/Practica_2_GCP/codigo_ejemplo/cgi-bin/
 25.  Cambia tu formulario para que los datos se envíen por el método POST de HTTP, en lugar del método GET, recuerda reiniciar el servicio de Apache para evitar que la caché muestre el formulario anterior. Repite los pasos del 22 al 25.
 
 ## Guia para su desarrollo
-Se ha desarrollado una guia para familiarizarse con el entorno de Google Cloud y pueden llevar a acabo la practica:
+Se ha desarrollado una guia para familiarizarse con el entorno de Google Cloud y pueden llevar a acabo la practica: <https://docs.google.com/document/d/1jy-gZtct7WBHKHrV9OnRDauRAhdM3AB30bLtJqXZS80/edit?usp=sharing>
 
 NOTA: La guia solo sirve como material de apoyo, mas no contiene en su totalidad los pasos para llevar acabo la practica.
 
