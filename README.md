@@ -13,13 +13,13 @@ El alumno centralizará el código fuente de un proyecto web en la nube con Git 
 5.  Cambia al directorio `/etc/apache2/sites-available/`.
 6.  Copia el archivo `000-default.conf` al archivo `redesfc.conf`, utiliza la opción `-a` en el comando `cp`, para que se preserven los atributos del archivo, tales como el dueño, el grupo y los permisos.
 7.  Con un editor de texto, abre el archivo `redesfc.conf` copiado en el paso anterior.
-8.  Cambia el valor de la directiva `DocumentRoot`, en lugar de que esté establecido con la ruta `/var/www/html`, coloca la ruta en donde se encuentra el código HTML y otros elementos web de la carpeta `codigo_ejemplo/` de la práctica 3 del repositorio clonado en el punto 4. Por ejemplo, `/var/www/html/Practica_2_GCP/codigo_ejemplo`.
+8.  Cambia el valor de la directiva `DocumentRoot`, en lugar de que esté establecido con la ruta `/var/www/html`, coloca la ruta en donde se encuentra el código HTML y otros elementos web de la carpeta `codigo_ejemplo/` de la práctica 2 del repositorio clonado en el punto 4. Por ejemplo, `/var/www/html/Practica_2_GCP/codigo_ejemplo`.
 9.  Guarda los cambios en el archivo `redesfc.conf`
-10. Cambia al directorio `/var/www/html`.
-11. Cambia tanto el usuario como el grupo del directorio y de sus elementos, por tu usuario y grupo, por ejemplo `chown -R ubuntu:ubuntu redes-2021-1/`
-12. En la terminal ejecuta el comando `sudo a2dissite 000-default.conf` para deshabilitar el sitio actual. Y ejecuta el comando `sudo a2ensite redesfc.conf`, para habilitar el nuevo sitio web. Para que se apliquen los cambios ejecuta reiniciar el servidor Apache, con el comando `sudo systemctl restart apache2.service`.
-13. Ingresa desde un navegador web usando la dirección IP pública proporcionada por GCP (la *IP Estatica*), al servidor web, y deberás visualizar el formulario. Además, ingresa a la ruta <http://mi_IP/images>, y observa el contenido.
-14. En el mismo archivo `redesfc.conf`, agrega entre las directivas `<VirtualHost></VirtualHost>` lo siguiente. Verifica que la ruta del directorio para tu caso sea el correcto. Esto se usa para evitar que el servidor liste el contenido de los directorios de la ruta configurada en `DocumentRoot`, es una configuración de seguridad.
+11. Cambia al directorio `/var/www/html`.
+12. Cambia tanto el usuario como el grupo del directorio y de sus elementos, por tu usuario y grupo, por ejemplo `chown -R ubuntu:ubuntu redes-2023-1/`
+13. En la terminal ejecuta el comando `sudo a2dissite 000-default.conf` para deshabilitar el sitio actual. Y ejecuta el comando `sudo a2ensite redesfc.conf`, para habilitar el nuevo sitio web. Para verificar si la configuración creada es correcta tendras que ejcutar `apachectl -t` lo cual te dira si el archivo de configuración es correcto o contiene errores y para que se apliquen los cambios ejecuta reiniciar el servidor Apache, con el comando `sudo systemctl restart apache2.service`.
+14. Ingresa desde un navegador web usando la dirección IP pública proporcionada por GCP (la *IP Estatica*), al servidor web, y deberás visualizar el formulario. Además, ingresa a la ruta <http://mi_IP/images>, y observa el contenido.
+15. En el mismo archivo `redesfc.conf`, agrega entre las directivas `<VirtualHost></VirtualHost>` lo siguiente. Verifica que la ruta del directorio para tu caso sea el correcto. Esto se usa para evitar que el servidor liste el contenido de los directorios de la ruta configurada en `DocumentRoot`, es una configuración de seguridad.
 
 ```
 <Directory /var/www/html/Practica_2_GCP/codigo_ejemplo>
