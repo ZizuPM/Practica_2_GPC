@@ -18,7 +18,7 @@ El alumno centralizará el código fuente de un proyecto web en la nube con Git 
 10. Cambia al directorio `/var/www/html`.
 11. Cambia tanto el usuario como el grupo del directorio y de sus elementos, por tu usuario y grupo, por ejemplo `chown -R ubuntu:ubuntu redes-2021-1/`
 12. En la terminal ejecuta el comando `sudo a2dissite 000-default.conf` para deshabilitar el sitio actual. Y ejecuta el comando `sudo a2ensite redesfc.conf`, para habilitar el nuevo sitio web. Para que se apliquen los cambios ejecuta reiniciar el servidor Apache, con el comando `sudo systemctl restart apache2.service`.
-13. Ingresa desde un navegador web usando la dirección IP pública proporcionada por AWS (la *elastic IP*), al servidor web, y deberás visualizar el formulario. Además, ingresa a la ruta <http://mi_IP/images>, y observa el contenido.
+13. Ingresa desde un navegador web usando la dirección IP pública proporcionada por GCP (la *IP Estatica*), al servidor web, y deberás visualizar el formulario. Además, ingresa a la ruta <http://mi_IP/images>, y observa el contenido.
 14. En el mismo archivo `redesfc.conf`, agrega entre las directivas `<VirtualHost></VirtualHost>` lo siguiente. Verifica que la ruta del directorio para tu caso sea el correcto. Esto se usa para evitar que el servidor liste el contenido de los directorios de la ruta configurada en `DocumentRoot`, es una configuración de seguridad.
 
 ```
