@@ -1,0 +1,40 @@
+/* Estilo para el formulario */
+form {
+  background-color: limegreen; /* Fondo verde limón */
+  padding: 20px; /* Espaciado interior para separar el contenido del borde */
+  border-radius: 10px; /* Bordes redondeados */
+  width: 300px; /* Ancho del formulario, puedes ajustarlo según tus necesidades */
+  margin: 0 auto; /* Centrar el formulario en la página */
+}
+
+/* Estilo para las etiquetas de los campos */
+label {
+  display: block; /* Mostrar cada etiqueta en una línea separada */
+  margin-bottom: 10px; /* Espacio entre etiquetas */
+}
+
+/* Estilo para los campos de entrada de texto */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Ocupar todo el ancho disponible */
+  padding: 10px; /* Espaciado interior */
+  margin-bottom: 10px; /* Espacio entre campos */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para el botón de envío */
+input[type="submit"] {
+  background-color: #333; /* Color de fondo */
+  color: #fff; /* Color de texto */
+  padding: 10px 20px; /* Espaciado interior */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}
+
+/* Estilo para el botón de envío al pasar el ratón por encima */
+input[type="submit"]:hover {
+  background-color: #555; /* Color de fondo al pasar el ratón por encima */
+}
